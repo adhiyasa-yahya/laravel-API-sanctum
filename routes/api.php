@@ -29,6 +29,6 @@ Route::prefix('v1')->group(function() {
         Route::get('/product', [ProductController::class, 'index']);
         Route::get('/products', [ProductController::class, 'product']);
         Route::post('/product-sort', [ProductController::class, 'productSort']);
-        Route::get('/product-group/{categori}', [ProductController::class, 'productGroup']);
+        Route::get('/product-group', [ProductController::class, 'productGroup']);
     });
 });
